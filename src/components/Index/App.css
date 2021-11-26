@@ -1,0 +1,73 @@
+#app{
+  /*background-color: #fff;*/
+  /*direction: rtl;*/
+  /*text-align: right;*/
+  /*font-family: IRANSans, serif;*/
+  /*font-size: 14px;*/
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  /*src:url('./../public/fonts/IRANSans.ttf') format('truetype');*/
+}
+.header_row{
+  width: 100vw;
+  height: 40px;
+  background: rgba(56 ,252 ,129 , 0.53);
+  text-align: center;
+}
+.first_row{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(36,210,101);
+  background: linear-gradient(0deg, rgba(36,210,101,1) 0%, rgb(173 253 204) 100%);
+}
+.second_row{
+  width: 100vw;
+  height: 330px;
+  background: rgb(36,210,101);
+  background: linear-gradient(0deg, rgba(36,210,101,1) 0%, rgb(67 226 126) 100%);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: stretch;
+}
+.brand_title{
+  font-size: 45px;
+  color: white;
+}
+.brand_description{
+  font-size: 16px;
+  color: white;
+}
+.download_socials{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+.download_socials a{
+
+}
+.download_socials img{
+  width: 150px;
+}
+.mobile_app{
+  position: relative;
+  z-index: 100;
+  max-width: 70%;
+}
+
+.max-100{
+  max-width: 100%;
+}
+
+.f-1_2{
+  font-size: 1.2em;
+}

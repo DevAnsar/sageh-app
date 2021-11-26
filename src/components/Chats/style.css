@@ -1,0 +1,181 @@
+.chat-app {
+
+    background: whitesmoke;
+    height: calc(100vh - 125px);
+}
+
+.chat-app > .channel-list {
+
+    border-left: 1px solid rgb(224, 224, 224);
+    margin: 0;
+    height: calc(100%);
+    overflow-y: auto;
+}
+
+.chat-app > .channel-list > .channel-item {
+
+    /*border-left: 1px solid rgb(224, 224, 224);*/
+    padding: 10px 10px;
+    /*height: calc(100%);*/
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.chat-app > .channel-list > .channel-item:hover {
+    cursor: pointer;
+    background: rgba(31, 167, 58, 0.08);
+}
+
+.chat-app > .channel-list > .channel-item.active {
+    background: white;
+}
+
+.chat-app > .channel-list > .channel-item .channel-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    background: white;
+}
+
+.chat-app > .channel-list > .channel-item .channel-img img {
+    width: 99%;
+    height: 99%;
+    text-align: center;
+    align-items: center;
+}
+
+.chat-app > .channel-list > .channel-item.online .channel-img {
+    border: 3px solid #1fa73a !important;
+}
+
+.chat-app > .channel-list > .channel-item .channel-name {
+
+    margin-right: 8px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.chat-app .messages-panel {
+
+    height: 100%;
+}
+
+.chat-app .messages-panel .no-content-message {
+
+    height: 100% !important;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.chat-app .messages-panel .messages-list {
+
+    align-self: stretch;
+    height: calc(100% - 130px);
+    overflow-y: auto;
+    padding: 25px;
+}
+
+.chat-app .messages-panel .messages-input {
+
+    /*width: 100%;*/
+    height: 65px;
+    /*border-top: 1px solid rgb(224, 224, 224);*/
+    /*background-color: #f0f0f0;*/
+    /*display: flex;*/
+}
+
+.chat-app .messages-panel .user-info {
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.chat-app .messages-panel .user-info .channel-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    background: white;
+}
+
+.chat-app .messages-panel .user-info .channel-img img {
+    width: 99%;
+    height: 99%;
+    text-align: center;
+    align-items: center;
+}
+
+.chat-app .messages-panel .user-info .channel-name {
+    margin-right: 8px;
+    font-size: 15px;
+    color: #424242;
+}
+
+.chat-app .messages-panel .messages-input .send-button {
+    width: 90px;
+}
+
+.chat-app .messages-panel .messages-input .send-text {
+    width: calc(100% - 114px) !important;
+}
+
+.chat-app .messages-panel .messages-list .message-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.chat-app .messages-panel .messages-list .message-item.right-side {
+
+    justify-content: flex-start;
+
+}
+
+.chat-app .messages-panel .messages-list .message-item.left-side {
+
+    justify-content: flex-end;
+
+}
+
+.chat-app .messages-panel .messages-list .message-item .message-body {
+    padding: 10px;
+    margin-bottom: 15px;
+    /* border: 1px solid #eee; */
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 2px #ccc;
+    width: max-content;
+}
+
+.chat-app .messages-panel .messages-list .message-item.left-side .message-body {
+    background: #97f1a6 !important;;
+
+}
+
+.chat-app .messages-panel .messages-list .message-item .message-body .sender-name {
+    font-size: 7pt;
+}
+
+.chat-app .messages-panel .messages-list .message-item .message-body .text {
+    font-size: 9.9pt;
+}
